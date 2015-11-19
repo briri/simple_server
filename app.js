@@ -14,14 +14,14 @@ server.get('/', function(req, res){
 });
 
 server.on('close', function(){
-	LOG.error("Simple Server is not longer listening");
+	console.log("Simple Server is not longer listening");
 });
 
 server.on('error', function(err){
-	LOG.error("Simple Server has encountered an error: ", err);
+	console.log("Simple Server has encountered an error: " + err);
 });
 
 // Startup the web server	
 server.listen(18880, function(){
-	LOG.error("Simple Server is listening.");	
+	console.log("Simple Server is listening.");	
 });
