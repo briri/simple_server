@@ -3,7 +3,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 
-var router = require('./router.js');
 var server = express();
 
 server.use(bodyParser.urlencoded({extended: true}));
