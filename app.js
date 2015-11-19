@@ -14,10 +14,14 @@ server.get('/', function(req, res){
 });
 
 server.on('error', function(err){
-	LOG.error(CONFIG['server']['name'] + " has encountered an error: ", err);
+	LOG.error("Simple Server has encountered an error: ", err);
+});
+
+server.on('error', function(err){
+	LOG.error("Simple Server has encountered an error: ", err);
 });
 
 // Startup the web server	
 server.listen(18880, function(){
-	
+	LOG.error("Simple Server is listening.");	
 });
