@@ -1,0 +1,25 @@
+{
+  "name": "simple_server",
+  "version": "0.0.0",
+  "description": "A simple express server that serves up static files.",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/briri/simple_server.git"
+  },
+  "keywords": [
+    "d2d",
+    "archive",
+    "s3"
+  ],
+  "author": "Brian Riley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/briri/simple_server.git/issues"
+  },
+  "homepage": "https://github.com/briri/simple_server.git",
+  "dependencies": {
+    "express": "^4.13.1",
+    "body-parser": "~1.10.1"
+  }
+}
