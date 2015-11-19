@@ -13,8 +13,8 @@ server.get('/', function(req, res){
 	res.status(200).send("You found it!");
 });
 
-server.on('error', function(err){
-	LOG.error("Simple Server has encountered an error: ", err);
+server.on('close', function(){
+	LOG.error("Simple Server is not longer listening");
 });
 
 server.on('error', function(err){
